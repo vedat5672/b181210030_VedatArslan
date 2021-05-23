@@ -1,0 +1,207 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+[class*="col-"] {
+    float: left;
+    
+}
+body{
+    background-repeat:no-repeat;
+    background-size: 100%;
+}
+.row-1 {height:8.33%;}
+.row-2 {height: 16.66%;}
+.row-3 {height: 25%;}
+.row-4 {height: 33.33%;}
+.row-5 {height: 41.66%;}
+.row-6 {height: 50%;}
+.row-7 {height: 58.33%;}
+.row-8 {height: 66.66%;}
+.row-9 {height: 75%;}
+.row-10 {height: 83.33%;}
+.row-11 {height: 91.66%;}
+.row-12 {height: 100%;}  
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+b
+body
+{
+    margin-top: 20px;
+}
+
+a{
+    text-decoration: none;
+  }
+  
+  li{
+    list-style: none;
+  }
+  .login
+  {
+    position:absolute;
+   
+    color:black;
+    font-size: 25px;
+    text-shadow: 1px 1px black;
+      right: 120px;
+      
+      display: inline;
+      
+     
+     top:0px;  
+  }
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 8vh;
+    border-bottom: 1px solid black;
+    color: #eee;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+
+  .nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+  }
+  
+  .nav-links a{
+    color: yellow;
+    font-weight:bolder;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+    text-shadow: 1px 1px 1px cornflowerblue;
+  }
+  
+  .burger{
+    display: none;
+    cursor: pointer;
+  }
+  
+  .burger .line1,
+  .burger .line2,
+  .burger .line3{
+    width: 24px;
+    height: 3px;
+    background-color:chocolate;
+    transition: .3s ease;
+  }
+  .burger .line2{
+    margin: 3px 0px;
+  }
+
+  
+  @media screen and (max-width: 1000px){
+    body{
+      overflow-x: hidden;
+    }
+
+  
+    .burger{
+      display: block;
+    }
+  
+    .nav-links{
+        z-index: 1;
+      position: absolute;
+      top: 12vh;
+      right: 0;
+      width: 45%;
+      height: 92vh;
+      display: flex;
+      flex-direction: column;
+      background: #a71930;
+      align-items: center;
+      justify-content: space-around;
+      transform: translateX(100%);
+      transition: .5s ease;
+    }
+  
+    .nav-links li{
+      opacity: 0;
+    }
+  }
+  
+  .nav-active{
+    transform: translateX(0);
+  }
+  
+  .close .line1{
+    transform: rotate(-45deg) translate(-5px,3px);
+    transition: .3s ease;
+  }
+  
+  .close .line2{
+    opacity: 0;
+  }
+  
+  .close .line3{
+    transform: rotate(45deg) translate(-5px,-3px);
+    transition: .3s ease;
+  }
+  
+  
+  
+  
+  @keyframes linksFade {
+    from{
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to{
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+  footer
+{
+ 
+    
+     position: sticky;
+    float: left;
+    z-index: 20;
+    bottom: 0px;
+    width: 100%;
+    
+
+    
+}
+div h1
+{
+    color:green;
+}
+ .container-ilgi
+ {
+     margin: 30px;
+     width: 1000px;
+     height: auto;
+ }
+.footer-caner1{background-color:white;box-shadow:0 1px 1px 0 rgba(0,0,0,0.12);box-sizing:border-box;width:100%;text-align:left;font:normal 16px sans-serif;padding:10px 10px;margin-top:80px}
+.footer-caner1 .footer-left p{color:#8f9296;font-size:14px;margin:0}
+.footer-caner1 p.footer-links{font-size:18px;font-weight:700;color:#fff;margin:0 0 0px;padding:0}
+.footer-caner1 p.footer-links a{display:inline-block;line-height:1.8;text-decoration:none;color:inherit}
+.footer-caner1 .footer-right{float:right;margin:10px;max-width:180px}
+.footer-caner1 .footer-right a{display:inline-block;margin:20px;width:55px;height:55px;border-radius:2px;font-size:20px;color:#fff;text-align:center;line-height:35px;margin-left:3px}
+@media (max-width: 600px) {
+.footer-caner1 .footer-left,.footer-caner1 .footer-right{text-align:center}
+.footer-caner1 .footer-right{float:none;margin:0 auto 20px}
+.footer-caner1 .footer-left p.footer-links{line-height:1.8}
+}
+

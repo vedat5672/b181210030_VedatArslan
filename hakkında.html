@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="Siirt.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <title>Hakkında</title>
+   <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+</head>
+<script>
+        $(document).ready(function()
+  {
+        var dizi=[];
+        
+      var sayi=$('.blog').size();
+     
+      for(var a=0; a<sayi; a++)
+      {
+          var text=$('.blog').eq(a).text();
+          dizi.push(text);
+          text=text.substring(0,300);
+          $('.blog').eq(a).text(text);
+         
+      }
+      $(document).on("click",'#devamınıoku',function(){
+        $(this).hide();
+        
+        var numara=$(this).parents('.blog').index();
+       
+        $('.blog').eq(numara-2).text(dizi[numara-2]);
+       
+      });
+      $('.blog').append('<button id="devamınıoku" class="göster">&nbsp;&nbsp;...devamke </span>');
+  });
+</script>
+
+<body style="margin: 0;">
+   
+    <header >
+          
+                
+            
+        <nav>
+            
+          
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-links">
+              <li><a href="#">Hakkımızda</a></li>
+              <li><a href="#">Egitim Bilgileri</a></li>
+              <li><a href="#">Şehrim</a></li>
+              <li><a href="#">İletişim</a></li>
+              <li><a href="#">İlgi Alanlarım</a></li>
+              <li><a href="#">İletişim Sayfası</a></li>
+            </ul>
+           <div><img style=" width: 20%; height: 20%; ;"src=icon\sign-in-alt-solid.svg></div>
+                
+            
+            <div class="login"><a href="#">Giris  <p style="display: inline-block;font-size: 30;">|</p></a></div>
+            
+          
+        </nav> 
+        <script src="main.js" charset="utf-8"></script>  
+    </header>   
+    
+
+        
+
+        
+  <h1 style="color:cornflowerblue;font-family: cursive;text-align: center; font-size: 5vw;"> Kısaca Ben Kim miyim?</h1>
+
+  <div class="blog">  
+   
+         Merhaba ben Vedat Arslan 01/09/1998 istanbul dogumluyum. Yaklasık 22 senedir istanbulda oturuyorum. 
+         İstanbul Bahcelievlerde Şirintepe İlk-Orta Okulunda  okudum. Bizim okulun yanında bir park vardı. Parkta 
+         
+         Benden büyük abilerle basketball oynardım ve hala da oynuyorum. Basket Sahasında abilerle mac yapar maç bittikten
+         sonrada abiler bize içecek alırlardı.Yaşımdan büyük insanlarla oynamak hoşuma gidiyor çünkü oyun ciddi ve eglenceli geçiyor.
+         Basket dısında futboluda mahalle arkadaslarımla lisenin bahcesinde oynardık.
+   
+         
+         <p>Çocuklugumuzun gectiği mahallede çok güzel oyunlar oynardık 9 Tas, Saklambac, Körebe ve aksamları oturur sohbet ederdik
+             Şimdi Büyüdük ne oyun oynadıgım arkadaslar kaldı yerinde ne de o güzel vakitler insan özlüyor cocuklugunu. 
+             liseyi 1 sene  arnavutköyde 3 sene bakırköyde bu iki yer kültürel olarak çok değişikti. Arnavutköye servisle 
+            2.00 saat te giderdim. Acıkcası okul çok güzeldi ama uzak olması beni  baya yoruyordu  ya insan servise sabah 6:00
+            binermiydi.
+         </p>
+
+     <br>
+     <p > Bakırköy Gürlek Nakipoglu Anadolu Lisesinde (GNAL) ders aralarında basketbol oynardım hatta bazen derse girmez yine bast-ketball oynardım
+         son sınıfta ise okula masa tenisi geldi. bende masa tenisi oynamaya basladım.Okul  bitti Sınava gircez  ama birsey bilmiyom ki
+         ilk sene sınav girdim basarısız oldum ilk 500.000 deydim ondan sonra ne mi oldu....
+     </p>
+     <br>
+     <p >
+        
+     </p>
+   
+    
+   </div>
+   <div class="blog">  
+
+    
+    
+    <br>
+     <p>Annem benle bir gün konustu dediki ya 1 sene daha hazırlanırsın yada manava. Bizim manav meshur manav yani bizim sülalede okumayanlar
+         orada calısıyor bidebenim babam oranın ortagı bir girssem bir daha cıkamam.Bende manavda calısmak istemediğim için sınava hazırlandım
+         1 sene boyunca hergün sürekli olarak ve sınav vakti geldi kapıya. Sınav yeri ve saatini ögrenip gittik sınava girceğimiz liseye
+         oturdugum yerin sandalyesini sallanıyordu ve cam açık bana hava geliyordu. Bu kadar sansız olabilirdim. Sınav esnasında o dikkat dagınıklıgıyla
+         sınava girdim ve 60.000 oldum.
+     <p>
+
+     <br>
+     <p>
+        Şimdi Sakarya Üniversitesinde Bilgisayar Mühendisliği okuyorum. ilk sene ingilizce hazırlık okudum ama daha cok üniye hazırlık oldu.
+        ilk sene bölüm derslerinde zorlansamda ikinci seneye geldiğimde sanki ögrendiğim seyler tekrarlanıyordu.Şimdi ise  c# , Java
+        web proglamlama, veri tabanı yönetimi, backend,javascript biliyorum. şimdi daha cok çalısıp amaçlarıma ulaşmam lazım. 
+     </p>
+     <p >Üniversitede Edindiğim hobi ise biraz gezmek biraz da kitap okuma sevdası hayatımda belki 3 veya 4 kitap okumuş birine 
+         sevda kazandırdı . Üniversitede ilk sene benim amca oğlumun yanında kaldım o da sosyoloji okuyordu. o  ve 5 arkadasıyla
+         3+1 evde kaldık. Orda kitap okudukları için sürekli bende yanımda kitap tasımaya basladım yanlıs anlamayan tasımaya basladım okumaya degil..
+
+     </p>
+     <br>
+     <p >
+        Bir kitap kurdu degiim ama sevdigim yazarlar var Stefan Zweig, Markus Zusak,Franz kafka türk yazarlardan Oguz Atay
+        şair olarak Ahmet Arif,Orhan Veli Kanık ve Yunus Emreyi severim.
+     </p>
+   
+    
+   </div>
+   <div class="shadows" style="color:darkturquoise ;text-align: center;  font-size: 3vw;">Bir Basket Tutkunu </div>
+<div class="basket" style="float: left; margin-left: 50px;">
+    <img  style="border-radius: 10px;" src=" img\FurkanKorkmaz.jpg" width="15%"  height="20%">
+   
+    <img style="border-radius: 10px;"  src=" img\SinanGüler.jpg"width="15%"  height="20%" >
+    <img style="border-radius: 10px;" src=" img\BarısHersek.jpg"width="15%"  height="20%" >
+    <img style="border-radius: 10px;" src="img\CediOsman.jpg" width="15%"  height="20%"> 
+    <img style="border-radius: 10px;" src="img\DogusBalbay.jpg"width="15%"  height="20%" >
+    <img style="border-radius: 10px"  src=" img\FurkanAldemir.jpg"width="15%"  height="20%">
+   
+    <img style="border-radius:10px;"  src=" img\SemihErden.jpg" width="15%"  height="20%">
+    <img style="border-radius: 10px;" src=" img\IsılAlben.jpg" width="15%"  height="20%">
+    <img style="border-radius: 10px"  src=" img\PelinDeryaBilgic.jpg"width="15%"  height="20%" >
+    <img style="border-radius:10px;" src=" img\tİlbeŞenyürek.jpg"width="15%"  height="20%">
+</div>
+   
+ <div style=" margin-top: 10px; width: 40%; height: 300px;  float: left;   border:1px solid black; white-space: nowrap;overflow:scroll; 
+ ">
+  
+    <pre style="line-height: 20px; float: left; font-weight: bolder;  word-spacing: 2px; word-wrap: normal; letter-spacing: 1px; font-size: 12px;">
+
+     Basketball izlemeyi seviyorum. İzlerken keyif
+     alıyorum  Basketballda genel olarak tuttugum bir
+     takım yok.  Aslında ben  oyuncu tutuyorum.SEMİH 
+     ERDEN,BARIS HERSEK,CEDİ OSMAN vs, cogu NBA oynamıs
+     türk basketciler onlar  dısında kadın basketci 
+     olarak PELİN DERYA BİLGİC,ISIL ALBEN 'i takip 
+     ediyorum.ISIL ALBEN bir zaman galatasarayda oynuyordu
+     o yüzden  kendisini basarılı buluyorum.PELİN 
+     DERYA BİLGİÇ galatasarayda oynuyor.Bu oyuncular
+     basarılı ve oyuncu tarzları hosuma gidiyor.
+     
+    </pre>
+    
+</div>
+
+<iframe src="https://www.fanatik.com.tr/turkiye-basketbol-1-liginde-normal-sezon-sona-eriyor-2219363" style="margin: 10px;"  name="menu" frameborder="0" scrolling="auto" height="300px" width="45%"></iframe>
+
+   
+
+  <div class="shadows" style="color:darkturquoise ; font-size: 3vw; margin-top: 10px; margin-left: 60px;">Bir Şair Tutkunu </div>
+    <img style=" float: left;width: 15%; margin-left: 50px; margin-top: 10px;" src="img\ahmet-arif.jpg">
+
+     <div style=" margin-left:10px;float: left; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 1.00vw;" >
+       <h2> Hasretinden Prangalar Eskittim</h2>
+       <p>Seni bağırabilsem seni,</p>
+       <p>Dipsiz Kuyulara,</p>
+       <p>Akan yıldıza,</p>
+       <p>Bir kibrit çöpüne varana,</p>
+       <p>Okyanusun en ıssız dalgasına</p>
+       <p>Düşmüş bir kibritt çöpüne.</p>
+       <p>Yitirmiş tılsımını ilk sevmelerin,</p>
+       <p>Yitirmiş öpücükleri,</p>
+       <p>Payı yok, apansız inen akşamdan,</p>
+       <p>Bir kadeh,bir cigara, dalıp gidene,  </p>
+       <p>Seni anlatabilsem seni..</p>
+       <p>Yokluğun,Cehennemin öbür adıdır</p>
+       <p>Üşüyorum, kapama gözlerini..</p>
+     </div>
+
+    <div>
+        <img style=" float: left;width: 15%; margin-left: 50px; margin-top: 10px;" src="img\ahmet-arif.jpg">
+
+     <div style=" margin-left:10px;float: left; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 1.00vw;" >
+       <h2> Hasretinden Prangalar Eskittim</h2>
+       <p>Seni bağırabilsem seni,</p>
+       <p>Dipsiz Kuyulara,</p>
+       <p>Akan yıldıza,</p>
+       <p>Bir kibrit çöpüne varana,</p>
+       <p>Okyanusun en ıssız dalgasına</p>
+       <p>Düşmüş bir kibritt çöpüne.</p>
+       <p>Yitirmiş tılsımını ilk sevmelerin,</p>
+       <p>Yitirmiş öpücükleri,</p>
+       <p>Payı yok, apansız inen akşamdan,</p>
+       <p>Bir kadeh,bir cigara, dalıp gidene,  </p>
+       <p>Seni anlatabilsem seni..</p>
+       <p>Yokluğun,Cehennemin öbür adıdır</p>
+       <p>Üşüyorum, kapama gözlerini..</p>
+     </div>
+
+    <div>
+
+
+      
+
+
+</body>
+</html>
